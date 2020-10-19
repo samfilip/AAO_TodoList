@@ -40,7 +40,7 @@ class Item
     end
 
     def title=(new_title)
-        raise "Title is not valid" if !(new_item.is_a? String)
+        raise "Title is not valid" if !(new_title.is_a? String)
         @title = new_title
     end
 
