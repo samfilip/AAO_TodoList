@@ -30,7 +30,7 @@ class Item
     end
 
     def deadline=(new_deadline)
-        raise "Deadline is not valid" if !valid_date?(deadline)
+        raise "Deadline is not valid" if !valid_date?(new_deadline)
         @deadline = new_deadline
     end
 
@@ -40,8 +40,8 @@ class Item
     end
 
     def title=(new_title)
-        raise "Title is not valid" if !(new_description.is_a? String)
+        raise "Title is not valid" if !(new_item.is_a? String)
         @title = new_title
     end
-    
+
 end # Item
