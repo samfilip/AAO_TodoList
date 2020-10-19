@@ -5,19 +5,15 @@ class Item
         year = input[0]
         month = input[1].to_i
         day = input[2].to_i
+        
         return false if input.length > 3 || input.length < 3
 
-        if day > 31 || day < 0
-            return false
-        end
+        return false if (day > 31 || day < 0)
 
-        if month < 1 || month > 12
-            return false
-        end
+        return false if (month < 1 || month > 12)
+    
+        return false if year.length != 4 || year.to_i > 2020
 
-        if year.length != 4 || year.to_i > 2020
-            return false
-        end
         true
  
     end
