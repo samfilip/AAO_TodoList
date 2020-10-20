@@ -5,7 +5,7 @@ class Item
         year = input[0]
         month = input[1].to_i
         day = input[2].to_i
-        
+
         return false if input.length > 3 || input.length < 3
 
         return false if (day > 31 || day < 0)
